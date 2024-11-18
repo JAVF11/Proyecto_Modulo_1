@@ -1,0 +1,210 @@
+/* Estilos para ocultar el recuadro de inicio de sesión inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Establecer el fondo del body */
+body {
+    background-image: url('Fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0; /* Eliminar el margen predeterminado del body */
+    padding: 0; /* Eliminar el relleno predeterminado del body */
+    height: 100vh; /* Hacer que el body ocupe el 100% de la altura del viewport */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('Fondo.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Info {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+
+p {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid blueviolet;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: blueviolet;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget label a {
+    color: white;
+    text-decoration: none;
+    margin-left: 60px;
+} 
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+.first {
+    width: 200px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    border-radius: 40px; /* Borde redondeado del botón */
+    background: skyblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 auto; /* Centrar horizontalmente */
+    display: block; /* Convertir el botón en un bloque para centrarlo */
+}
+
+.second {
+    width: 200px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    border-radius: 40px; /* Borde redondeado del botón */
+    background: skyblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 auto; /* Centrar horizontalmente */
+    display: block; /* Convertir el botón en un bloque para centrarlo */
+}
+
+.third {
+    width: 200px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    border-radius: 40px; /* Borde redondeado del botón */
+    background: skyblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 auto; /* Centrar horizontalmente */
+    display: block; /* Convertir el botón en un bloque para centrarlo */
+}
+
+
+.register {
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
